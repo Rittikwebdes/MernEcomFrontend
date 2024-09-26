@@ -1,0 +1,15 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+
+background-image: url(/bg8.avif);
+background-repeat: no-repeat;
+background-size: cover;
+      
+}
+body::-webkit-scrollbar{
+display: none;
+}
