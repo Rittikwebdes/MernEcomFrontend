@@ -1,15 +1,15 @@
 import axios from "axios";
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import RelatedProduct from "./RelatedProduct";
 import AppContext from "../../context/AppContext";
-import { useNavigate } from "react-router-dom";
+
 import { motion } from "framer-motion";
 export default function ProductDetails() {
   const{adToCart}  = useContext(AppContext)
   const [product, setProduct] = useState();
-  const url = "http://localhost:3000/api";
-const navigateTo = useNavigate()
+  const url = "https://mernecomwebsite.onrender.com/api";
+
   const { id } = useParams();
   useEffect(() => {
     const fetchProducts = async () => {
